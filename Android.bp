@@ -199,6 +199,13 @@ dex_import {
 	system_ext_specific: true,
 }
 
+dex_import {
+	name: "vendor.oplus.hardware.biometrics.fingerprintpay-V1.0-java",
+	owner: "oppo",
+	jars: ["proprietary/odm/framework/vendor.oplus.hardware.biometrics.fingerprintpay-V1.0-java.jar"],
+	device_specific: true,
+}
+
 prebuilt_etc_xml {
 	name: "android.hardware.gnss@2.1-service-qti",
 	owner: "oppo",

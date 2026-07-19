@@ -6,6 +6,9 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oppo/soda
 
 PRODUCT_COPY_FILES += \
+    vendor/oppo/soda/proprietary/odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service \
+    vendor/oppo/soda/proprietary/odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service \
+    vendor/oppo/soda/proprietary/odm/bin/init.oppo.fingerprints.sh:$(TARGET_COPY_OUT_ODM)/bin/init.oppo.fingerprints.sh \
     vendor/oppo/soda/proprietary/odm/etc/acdbdata/Bluetooth_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Bluetooth_cal.acdb \
     vendor/oppo/soda/proprietary/odm/etc/acdbdata/General_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/General_cal.acdb \
     vendor/oppo/soda/proprietary/odm/etc/acdbdata/Global_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Global_cal.acdb \
@@ -229,6 +232,9 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/soda/proprietary/odm/etc/camera/tonemap/tonemap_lut_7:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_7 \
     vendor/oppo/soda/proprietary/odm/etc/camera/tonemap/tonemap_lut_8:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_8 \
     vendor/oppo/soda/proprietary/odm/etc/camera/tonemap/tonemap_lut_9:$(TARGET_COPY_OUT_ODM)/etc/camera/tonemap/tonemap_lut_9 \
+    vendor/oppo/soda/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
+    vendor/oppo/soda/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service.rc \
+    vendor/oppo/soda/proprietary/odm/etc/permissions/vendor-oplus-hardware-biometrics-fingerprintpay.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/vendor-oplus-hardware-biometrics-fingerprintpay.xml \
     vendor/oppo/soda/proprietary/odm/firmware/aw87xxx_pid_39_fm_0.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw87xxx_pid_39_fm_0.bin \
     vendor/oppo/soda/proprietary/odm/firmware/aw87xxx_pid_39_music_0.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw87xxx_pid_39_music_0.bin \
     vendor/oppo/soda/proprietary/odm/firmware/aw87xxx_pid_39_music_1.bin:$(TARGET_COPY_OUT_ODM)/firmware/aw87xxx_pid_39_music_1.bin \
@@ -249,6 +255,8 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/soda/proprietary/odm/firmware/tp/20221/FW_NF_NT36525B_INNOLUX.bin:$(TARGET_COPY_OUT_ODM)/firmware/tp/20221/FW_NF_NT36525B_INNOLUX.bin \
     vendor/oppo/soda/proprietary/odm/firmware/tp/20221/LIMIT_NF_ILI9881H_90HZ_BOE.ini:$(TARGET_COPY_OUT_ODM)/firmware/tp/20221/LIMIT_NF_ILI9881H_90HZ_BOE.ini \
     vendor/oppo/soda/proprietary/odm/firmware/tp/20221/LIMIT_NF_ILI9881H_BOE.ini:$(TARGET_COPY_OUT_ODM)/firmware/tp/20221/LIMIT_NF_ILI9881H_BOE.ini \
+    vendor/oppo/soda/proprietary/odm/init.oppo.fingerprints.rc:$(TARGET_COPY_OUT_ODM)/init.oppo.fingerprints.rc \
+    vendor/oppo/soda/proprietary/odm/lib/anc.hal.so:$(TARGET_COPY_OUT_ODM)/lib/anc.hal.so \
     vendor/oppo/soda/proprietary/odm/lib/camera/com.qti.sensor.soda_cxt_gc02k0_macro.so:$(TARGET_COPY_OUT_ODM)/lib/camera/com.qti.sensor.soda_cxt_gc02k0_macro.so \
     vendor/oppo/soda/proprietary/odm/lib/camera/com.qti.sensor.soda_cxt_gc02m1_macro.so:$(TARGET_COPY_OUT_ODM)/lib/camera/com.qti.sensor.soda_cxt_gc02m1_macro.so \
     vendor/oppo/soda/proprietary/odm/lib/camera/com.qti.sensor.soda_cxt_gc02m1b_depth.so:$(TARGET_COPY_OUT_ODM)/lib/camera/com.qti.sensor.soda_cxt_gc02m1b_depth.so \
@@ -265,11 +273,11 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/soda/proprietary/odm/lib/camera/com.qti.sensor.soda_sy_imx471_front.so:$(TARGET_COPY_OUT_ODM)/lib/camera/com.qti.sensor.soda_sy_imx471_front.so \
     vendor/oppo/soda/proprietary/odm/lib/camera/com.qti.sensor.soda_tsp_ov8856_front.so:$(TARGET_COPY_OUT_ODM)/lib/camera/com.qti.sensor.soda_tsp_ov8856_front.so \
     vendor/oppo/soda/proprietary/odm/lib/camera/com.qti.sensor.soda_tsp_s5k4h7_front.so:$(TARGET_COPY_OUT_ODM)/lib/camera/com.qti.sensor.soda_tsp_s5k4h7_front.so \
-    vendor/oppo/soda/proprietary/odm/lib/hw/fingerprint.goodix_G2.default.so:$(TARGET_COPY_OUT_ODM)/lib/hw/fingerprint.goodix_G2.default.so \
-    vendor/oppo/soda/proprietary/odm/lib/hw/fingerprint.goodix_G3.default.so:$(TARGET_COPY_OUT_ODM)/lib/hw/fingerprint.goodix_G3.default.so \
-    vendor/oppo/soda/proprietary/odm/lib/hw/fingerprint.goodix_G5.default.so:$(TARGET_COPY_OUT_ODM)/lib/hw/fingerprint.goodix_G5.default.so \
-    vendor/oppo/soda/proprietary/odm/lib/hw/fingerprint.goodix_G6.default.so:$(TARGET_COPY_OUT_ODM)/lib/hw/fingerprint.goodix_G6.default.so \
+    vendor/oppo/soda/proprietary/odm/lib/hw/fingerprint.silead.default.so:$(TARGET_COPY_OUT_ODM)/lib/hw/fingerprint.silead.default.so \
+    vendor/oppo/soda/proprietary/odm/lib/libalipay_factory.so:$(TARGET_COPY_OUT_ODM)/lib/libalipay_factory.so \
     vendor/oppo/soda/proprietary/odm/lib/libormshalclient.so:$(TARGET_COPY_OUT_ODM)/lib/libormshalclient.so \
+    vendor/oppo/soda/proprietary/odm/lib/librpmbengclient.so:$(TARGET_COPY_OUT_ODM)/lib/librpmbengclient.so \
+    vendor/oppo/soda/proprietary/odm/lib/libsl_fp_impl.so:$(TARGET_COPY_OUT_ODM)/lib/libsl_fp_impl.so \
     vendor/oppo/soda/proprietary/odm/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_ODM)/lib/mediadrm/libwvdrmengine.so \
     vendor/oppo/soda/proprietary/odm/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Encoder.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Encoder.so \
     vendor/oppo/soda/proprietary/odm/lib/rfsa/adsp/dirac.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/dirac.so \
@@ -295,9 +303,14 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/soda/proprietary/odm/lib/rfsa/adsp/libvdblurless_4.6.8_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libvdblurless_4.6.8_skel.so \
     vendor/oppo/soda/proprietary/odm/lib/rfsa/adsp/libvdblurless_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libvdblurless_skel.so \
     vendor/oppo/soda/proprietary/odm/lib/vendor.oplus.hardware.appradio@1.0.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.oplus.hardware.appradio@1.0.so \
+    vendor/oppo/soda/proprietary/odm/lib/vendor.oplus.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.oplus.hardware.biometrics.fingerprint@2.1.so \
+    vendor/oppo/soda/proprietary/odm/lib/vendor.oplus.hardware.biometrics.fingerprintpay@1.0.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.oplus.hardware.biometrics.fingerprintpay@1.0.so \
+    vendor/oppo/soda/proprietary/odm/lib/vendor.oplus.hardware.biometrics.fingerprintservice@1.0.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.oplus.hardware.biometrics.fingerprintservice@1.0.so \
+    vendor/oppo/soda/proprietary/odm/lib/vendor.oplus.hardware.commondcs@1.0.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.oplus.hardware.commondcs@1.0.so \
     vendor/oppo/soda/proprietary/odm/lib/vendor.oplus.hardware.ims@1.0.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.oplus.hardware.ims@1.0.so \
     vendor/oppo/soda/proprietary/odm/lib/vendor.oplus.hardware.orms@1.0.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.oplus.hardware.orms@1.0.so \
     vendor/oppo/soda/proprietary/odm/lib/vendor.oplus.hardware.radio@1.0.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.oplus.hardware.radio@1.0.so \
+    vendor/oppo/soda/proprietary/odm/lib64/anc.hal.so:$(TARGET_COPY_OUT_ODM)/lib64/anc.hal.so \
     vendor/oppo/soda/proprietary/odm/lib64/camera/com.qti.sensor.soda_cxt_gc02k0_macro.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.soda_cxt_gc02k0_macro.so \
     vendor/oppo/soda/proprietary/odm/lib64/camera/com.qti.sensor.soda_cxt_gc02m1_macro.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.soda_cxt_gc02m1_macro.so \
     vendor/oppo/soda/proprietary/odm/lib64/camera/com.qti.sensor.soda_cxt_gc02m1b_depth.so:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensor.soda_cxt_gc02m1b_depth.so \
@@ -374,9 +387,14 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/soda/proprietary/odm/lib64/camera/com.qti.tuned.soda_tsp_ov8856_front_india.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.soda_tsp_ov8856_front_india.bin \
     vendor/oppo/soda/proprietary/odm/lib64/camera/com.qti.tuned.soda_tsp_s5k4h7_front.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.soda_tsp_s5k4h7_front.bin \
     vendor/oppo/soda/proprietary/odm/lib64/camera/com.qti.tuned.soda_tsp_s5k4h7_front_india.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.soda_tsp_s5k4h7_front_india.bin \
-    vendor/oppo/soda/proprietary/odm/lib64/hw/libets_teeclient_v2.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/libets_teeclient_v2.so \
+    vendor/oppo/soda/proprietary/odm/lib64/hw/fingerprint.goodix_G2.default.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/fingerprint.goodix_G2.default.so \
+    vendor/oppo/soda/proprietary/odm/lib64/hw/fingerprint.goodix_G3.default.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/fingerprint.goodix_G3.default.so \
+    vendor/oppo/soda/proprietary/odm/lib64/hw/fingerprint.goodix_G5.default.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/fingerprint.goodix_G5.default.so \
+    vendor/oppo/soda/proprietary/odm/lib64/hw/fingerprint.goodix_G6.default.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/fingerprint.goodix_G6.default.so \
+    vendor/oppo/soda/proprietary/odm/lib64/hw/fingerprint.silead.default.so:$(TARGET_COPY_OUT_ODM)/lib64/hw/fingerprint.silead.default.so \
     vendor/oppo/soda/proprietary/odm/lib64/libAlgoProcess.so:$(TARGET_COPY_OUT_ODM)/lib64/libAlgoProcess.so \
     vendor/oppo/soda/proprietary/odm/lib64/libPolarrRender.so:$(TARGET_COPY_OUT_ODM)/lib64/libPolarrRender.so \
+    vendor/oppo/soda/proprietary/odm/lib64/libalipay_factory.so:$(TARGET_COPY_OUT_ODM)/lib64/libalipay_factory.so \
     vendor/oppo/soda/proprietary/odm/lib64/libarcsoft_distortion_correction.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_distortion_correction.so \
     vendor/oppo/soda/proprietary/odm/lib64/libarcsoft_dualcam_bokeh_api.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_dualcam_bokeh_api.so \
     vendor/oppo/soda/proprietary/odm/lib64/libarcsoft_dualcam_refocus_left.so:$(TARGET_COPY_OUT_ODM)/lib64/libarcsoft_dualcam_refocus_left.so \
@@ -397,11 +415,44 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/soda/proprietary/odm/lib64/libhta.so:$(TARGET_COPY_OUT_ODM)/lib64/libhta.so \
     vendor/oppo/soda/proprietary/odm/lib64/libmpbase.so:$(TARGET_COPY_OUT_ODM)/lib64/libmpbase.so \
     vendor/oppo/soda/proprietary/odm/lib64/libormshalclient.so:$(TARGET_COPY_OUT_ODM)/lib64/libormshalclient.so \
+    vendor/oppo/soda/proprietary/odm/lib64/librpmbengclient.so:$(TARGET_COPY_OUT_ODM)/lib64/librpmbengclient.so \
+    vendor/oppo/soda/proprietary/odm/lib64/libsl_fp_impl.so:$(TARGET_COPY_OUT_ODM)/lib64/libsl_fp_impl.so \
     vendor/oppo/soda/proprietary/odm/lib64/libstblur_capture_api.so:$(TARGET_COPY_OUT_ODM)/lib64/libstblur_capture_api.so \
     vendor/oppo/soda/proprietary/odm/lib64/vendor.oplus.hardware.appradio@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.appradio@1.0.so \
+    vendor/oppo/soda/proprietary/odm/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so \
+    vendor/oppo/soda/proprietary/odm/lib64/vendor.oplus.hardware.biometrics.fingerprintpay@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.biometrics.fingerprintpay@1.0.so \
+    vendor/oppo/soda/proprietary/odm/lib64/vendor.oplus.hardware.biometrics.fingerprintservice@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.biometrics.fingerprintservice@1.0.so \
+    vendor/oppo/soda/proprietary/odm/lib64/vendor.oplus.hardware.commondcs@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.commondcs@1.0.so \
     vendor/oppo/soda/proprietary/odm/lib64/vendor.oplus.hardware.ims@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.ims@1.0.so \
     vendor/oppo/soda/proprietary/odm/lib64/vendor.oplus.hardware.orms@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.orms@1.0.so \
     vendor/oppo/soda/proprietary/odm/lib64/vendor.oplus.hardware.radio@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.radio@1.0.so \
+    vendor/oppo/soda/proprietary/odm/vendor/firmware/cdfinger.b00:$(TARGET_COPY_OUT_ODM)/vendor/firmware/cdfinger.b00 \
+    vendor/oppo/soda/proprietary/odm/vendor/firmware/cdfinger.b01:$(TARGET_COPY_OUT_ODM)/vendor/firmware/cdfinger.b01 \
+    vendor/oppo/soda/proprietary/odm/vendor/firmware/cdfinger.b02:$(TARGET_COPY_OUT_ODM)/vendor/firmware/cdfinger.b02 \
+    vendor/oppo/soda/proprietary/odm/vendor/firmware/cdfinger.b03:$(TARGET_COPY_OUT_ODM)/vendor/firmware/cdfinger.b03 \
+    vendor/oppo/soda/proprietary/odm/vendor/firmware/cdfinger.b04:$(TARGET_COPY_OUT_ODM)/vendor/firmware/cdfinger.b04 \
+    vendor/oppo/soda/proprietary/odm/vendor/firmware/cdfinger.b05:$(TARGET_COPY_OUT_ODM)/vendor/firmware/cdfinger.b05 \
+    vendor/oppo/soda/proprietary/odm/vendor/firmware/cdfinger.b06:$(TARGET_COPY_OUT_ODM)/vendor/firmware/cdfinger.b06 \
+    vendor/oppo/soda/proprietary/odm/vendor/firmware/cdfinger.b07:$(TARGET_COPY_OUT_ODM)/vendor/firmware/cdfinger.b07 \
+    vendor/oppo/soda/proprietary/odm/vendor/firmware/cdfinger.mdt:$(TARGET_COPY_OUT_ODM)/vendor/firmware/cdfinger.mdt \
+    vendor/oppo/soda/proprietary/odm/vendor/firmware/goodixfp.b00:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.b00 \
+    vendor/oppo/soda/proprietary/odm/vendor/firmware/goodixfp.b01:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.b01 \
+    vendor/oppo/soda/proprietary/odm/vendor/firmware/goodixfp.b02:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.b02 \
+    vendor/oppo/soda/proprietary/odm/vendor/firmware/goodixfp.b03:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.b03 \
+    vendor/oppo/soda/proprietary/odm/vendor/firmware/goodixfp.b04:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.b04 \
+    vendor/oppo/soda/proprietary/odm/vendor/firmware/goodixfp.b05:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.b05 \
+    vendor/oppo/soda/proprietary/odm/vendor/firmware/goodixfp.b06:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.b06 \
+    vendor/oppo/soda/proprietary/odm/vendor/firmware/goodixfp.b07:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.b07 \
+    vendor/oppo/soda/proprietary/odm/vendor/firmware/goodixfp.mdt:$(TARGET_COPY_OUT_ODM)/vendor/firmware/goodixfp.mdt \
+    vendor/oppo/soda/proprietary/odm/vendor/firmware/sileadta.b00:$(TARGET_COPY_OUT_ODM)/vendor/firmware/sileadta.b00 \
+    vendor/oppo/soda/proprietary/odm/vendor/firmware/sileadta.b01:$(TARGET_COPY_OUT_ODM)/vendor/firmware/sileadta.b01 \
+    vendor/oppo/soda/proprietary/odm/vendor/firmware/sileadta.b02:$(TARGET_COPY_OUT_ODM)/vendor/firmware/sileadta.b02 \
+    vendor/oppo/soda/proprietary/odm/vendor/firmware/sileadta.b03:$(TARGET_COPY_OUT_ODM)/vendor/firmware/sileadta.b03 \
+    vendor/oppo/soda/proprietary/odm/vendor/firmware/sileadta.b04:$(TARGET_COPY_OUT_ODM)/vendor/firmware/sileadta.b04 \
+    vendor/oppo/soda/proprietary/odm/vendor/firmware/sileadta.b05:$(TARGET_COPY_OUT_ODM)/vendor/firmware/sileadta.b05 \
+    vendor/oppo/soda/proprietary/odm/vendor/firmware/sileadta.b06:$(TARGET_COPY_OUT_ODM)/vendor/firmware/sileadta.b06 \
+    vendor/oppo/soda/proprietary/odm/vendor/firmware/sileadta.b07:$(TARGET_COPY_OUT_ODM)/vendor/firmware/sileadta.b07 \
+    vendor/oppo/soda/proprietary/odm/vendor/firmware/sileadta.mdt:$(TARGET_COPY_OUT_ODM)/vendor/firmware/sileadta.mdt \
     vendor/oppo/soda/proprietary/system/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
     vendor/oppo/soda/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/oppo/soda/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
@@ -1458,6 +1509,7 @@ PRODUCT_PACKAGES += \
     dpmapi \
     qcrilhook \
     vendor.qti.hardware.alarm-V1.0-java \
+    vendor.oplus.hardware.biometrics.fingerprintpay-V1.0-java \
     android.hardware.gnss@2.1-service-qti \
     android.hardware.neuralnetworks@1.3-service-qti \
     manifest_android.hardware.drm@1.3-service.widevine \
