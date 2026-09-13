@@ -666,8 +666,6 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/soda/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
     vendor/oppo/soda/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
     vendor/oppo/soda/proprietary/vendor/etc/init/dpmQmiMgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dpmQmiMgr.rc \
-    vendor/oppo/soda/proprietary/vendor/etc/init/hw/init.wlan.qcom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.wlan.qcom.rc \
-    vendor/oppo/soda/proprietary/vendor/etc/init/hw/init.wlan.target.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.wlan.target.rc \
     vendor/oppo/soda/proprietary/vendor/etc/init/ims_rtp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims_rtp_daemon.rc \
     vendor/oppo/soda/proprietary/vendor/etc/init/imsdatadaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdatadaemon.rc \
     vendor/oppo/soda/proprietary/vendor/etc/init/imsqmidaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsqmidaemon.rc \
