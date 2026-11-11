@@ -16,7 +16,6 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/soda/proprietary/odm/etc/acdbdata/Hdmi_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Hdmi_cal.acdb \
     vendor/oppo/soda/proprietary/odm/etc/acdbdata/Headset_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Headset_cal.acdb \
     vendor/oppo/soda/proprietary/odm/etc/acdbdata/Speaker_cal.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/Speaker_cal.acdb \
-    vendor/oppo/soda/proprietary/odm/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_ODM)/etc/acdbdata/adsp_avs_config.acdb \
     vendor/oppo/soda/proprietary/odm/etc/camera/CameraHWConfiguration.config:$(TARGET_COPY_OUT_ODM)/etc/camera/CameraHWConfiguration.config \
     vendor/oppo/soda/proprietary/odm/etc/camera/FusionBin.dat:$(TARGET_COPY_OUT_ODM)/etc/camera/FusionBin.dat \
     vendor/oppo/soda/proprietary/odm/etc/camera/anc_cl_kernel.cache:$(TARGET_COPY_OUT_ODM)/etc/camera/anc_cl_kernel.cache \
@@ -282,10 +281,13 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/soda/proprietary/odm/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_ODM)/lib/mediadrm/libwvdrmengine.so \
     vendor/oppo/soda/proprietary/odm/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Encoder.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Encoder.so \
     vendor/oppo/soda/proprietary/odm/lib/rfsa/adsp/dirac.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/dirac.so \
+    vendor/oppo/soda/proprietary/odm/lib/rfsa/adsp/dirac_resource.dar:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/dirac_resource.dar \
     vendor/oppo/soda/proprietary/odm/lib/rfsa/adsp/libVDHexagonBlurless_v2_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libVDHexagonBlurless_v2_skel.so \
     vendor/oppo/soda/proprietary/odm/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so \
     vendor/oppo/soda/proprietary/odm/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel.so \
     vendor/oppo/soda/proprietary/odm/lib/rfsa/adsp/libarcsoft_portraitSN_hvx_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libarcsoft_portraitSN_hvx_skel.so \
+    vendor/oppo/soda/proprietary/odm/lib/rfsa/adsp/libc++.so.1:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libc++.so.1 \
+    vendor/oppo/soda/proprietary/odm/lib/rfsa/adsp/libc++abi.so.1:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libc++abi.so.1 \
     vendor/oppo/soda/proprietary/odm/lib/rfsa/adsp/libcalculator_domains_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libcalculator_domains_skel.so \
     vendor/oppo/soda/proprietary/odm/lib/rfsa/adsp/libcalculator_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libcalculator_skel.so \
     vendor/oppo/soda/proprietary/odm/lib/rfsa/adsp/libhdr_skel.so:$(TARGET_COPY_OUT_ODM)/lib/rfsa/adsp/libhdr_skel.so \
@@ -307,6 +309,7 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/soda/proprietary/odm/lib/vendor.oplus.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.oplus.hardware.biometrics.fingerprint@2.1.so \
     vendor/oppo/soda/proprietary/odm/lib/vendor.oplus.hardware.biometrics.fingerprintpay@1.0.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.oplus.hardware.biometrics.fingerprintpay@1.0.so \
     vendor/oppo/soda/proprietary/odm/lib/vendor.oplus.hardware.biometrics.fingerprintservice@1.0.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.oplus.hardware.biometrics.fingerprintservice@1.0.so \
+    vendor/oppo/soda/proprietary/odm/lib/vendor.oplus.hardware.bluetooth_audio@1.0.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.oplus.hardware.bluetooth_audio@1.0.so \
     vendor/oppo/soda/proprietary/odm/lib/vendor.oplus.hardware.commondcs@1.0.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.oplus.hardware.commondcs@1.0.so \
     vendor/oppo/soda/proprietary/odm/lib/vendor.oplus.hardware.ims@1.0.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.oplus.hardware.ims@1.0.so \
     vendor/oppo/soda/proprietary/odm/lib/vendor.oplus.hardware.orms@1.0.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.oplus.hardware.orms@1.0.so \
@@ -426,6 +429,7 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/soda/proprietary/odm/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so \
     vendor/oppo/soda/proprietary/odm/lib64/vendor.oplus.hardware.biometrics.fingerprintpay@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.biometrics.fingerprintpay@1.0.so \
     vendor/oppo/soda/proprietary/odm/lib64/vendor.oplus.hardware.biometrics.fingerprintservice@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.biometrics.fingerprintservice@1.0.so \
+    vendor/oppo/soda/proprietary/odm/lib64/vendor.oplus.hardware.bluetooth_audio@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.bluetooth_audio@1.0.so \
     vendor/oppo/soda/proprietary/odm/lib64/vendor.oplus.hardware.commondcs@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.commondcs@1.0.so \
     vendor/oppo/soda/proprietary/odm/lib64/vendor.oplus.hardware.ims@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.ims@1.0.so \
     vendor/oppo/soda/proprietary/odm/lib64/vendor.oplus.hardware.orms@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.orms@1.0.so \
@@ -626,9 +630,37 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/soda/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
     vendor/oppo/soda/proprietary/vendor/bin/xtwifi-client:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-client \
     vendor/oppo/soda/proprietary/vendor/bin/xtwifi-inet-agent:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-inet-agent \
+    vendor/oppo/soda/proprietary/vendor/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb \
+    vendor/oppo/soda/proprietary/vendor/etc/acdbdata/IDP/IDP_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/IDP_General_cal.acdb \
+    vendor/oppo/soda/proprietary/vendor/etc/acdbdata/IDP/IDP_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/IDP_Global_cal.acdb \
+    vendor/oppo/soda/proprietary/vendor/etc/acdbdata/IDP/IDP_Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/IDP_Handset_cal.acdb \
+    vendor/oppo/soda/proprietary/vendor/etc/acdbdata/IDP/IDP_Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/IDP_Hdmi_cal.acdb \
+    vendor/oppo/soda/proprietary/vendor/etc/acdbdata/IDP/IDP_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/IDP_Headset_cal.acdb \
+    vendor/oppo/soda/proprietary/vendor/etc/acdbdata/IDP/IDP_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/IDP_Speaker_cal.acdb \
     vendor/oppo/soda/proprietary/vendor/etc/acdbdata/IDP/IDP_workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/IDP_workspaceFile.qwsp \
+    vendor/oppo/soda/proprietary/vendor/etc/acdbdata/IDP/bengal-scubaidp-snd-card/IDP_Scuba_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/bengal-scubaidp-snd-card/IDP_Scuba_Bluetooth_cal.acdb \
+    vendor/oppo/soda/proprietary/vendor/etc/acdbdata/IDP/bengal-scubaidp-snd-card/IDP_Scuba_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/bengal-scubaidp-snd-card/IDP_Scuba_General_cal.acdb \
+    vendor/oppo/soda/proprietary/vendor/etc/acdbdata/IDP/bengal-scubaidp-snd-card/IDP_Scuba_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/bengal-scubaidp-snd-card/IDP_Scuba_Global_cal.acdb \
+    vendor/oppo/soda/proprietary/vendor/etc/acdbdata/IDP/bengal-scubaidp-snd-card/IDP_Scuba_Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/bengal-scubaidp-snd-card/IDP_Scuba_Handset_cal.acdb \
+    vendor/oppo/soda/proprietary/vendor/etc/acdbdata/IDP/bengal-scubaidp-snd-card/IDP_Scuba_Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/bengal-scubaidp-snd-card/IDP_Scuba_Hdmi_cal.acdb \
+    vendor/oppo/soda/proprietary/vendor/etc/acdbdata/IDP/bengal-scubaidp-snd-card/IDP_Scuba_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/bengal-scubaidp-snd-card/IDP_Scuba_Headset_cal.acdb \
+    vendor/oppo/soda/proprietary/vendor/etc/acdbdata/IDP/bengal-scubaidp-snd-card/IDP_Scuba_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/bengal-scubaidp-snd-card/IDP_Scuba_Speaker_cal.acdb \
     vendor/oppo/soda/proprietary/vendor/etc/acdbdata/IDP/bengal-scubaidp-snd-card/IDP_Scuba_workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/bengal-scubaidp-snd-card/IDP_Scuba_workspaceFile.qwsp \
+    vendor/oppo/soda/proprietary/vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb \
+    vendor/oppo/soda/proprietary/vendor/etc/acdbdata/QRD/QRD_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_General_cal.acdb \
+    vendor/oppo/soda/proprietary/vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Global_cal.acdb \
+    vendor/oppo/soda/proprietary/vendor/etc/acdbdata/QRD/QRD_Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Handset_cal.acdb \
+    vendor/oppo/soda/proprietary/vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb \
+    vendor/oppo/soda/proprietary/vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Headset_cal.acdb \
+    vendor/oppo/soda/proprietary/vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Speaker_cal.acdb \
     vendor/oppo/soda/proprietary/vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_workspaceFile.qwsp \
+    vendor/oppo/soda/proprietary/vendor/etc/acdbdata/QRD/bengal-scubaqrd-snd-card/QRD_Scuba_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/bengal-scubaqrd-snd-card/QRD_Scuba_Bluetooth_cal.acdb \
+    vendor/oppo/soda/proprietary/vendor/etc/acdbdata/QRD/bengal-scubaqrd-snd-card/QRD_Scuba_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/bengal-scubaqrd-snd-card/QRD_Scuba_General_cal.acdb \
+    vendor/oppo/soda/proprietary/vendor/etc/acdbdata/QRD/bengal-scubaqrd-snd-card/QRD_Scuba_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/bengal-scubaqrd-snd-card/QRD_Scuba_Global_cal.acdb \
+    vendor/oppo/soda/proprietary/vendor/etc/acdbdata/QRD/bengal-scubaqrd-snd-card/QRD_Scuba_Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/bengal-scubaqrd-snd-card/QRD_Scuba_Handset_cal.acdb \
+    vendor/oppo/soda/proprietary/vendor/etc/acdbdata/QRD/bengal-scubaqrd-snd-card/QRD_Scuba_Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/bengal-scubaqrd-snd-card/QRD_Scuba_Hdmi_cal.acdb \
+    vendor/oppo/soda/proprietary/vendor/etc/acdbdata/QRD/bengal-scubaqrd-snd-card/QRD_Scuba_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/bengal-scubaqrd-snd-card/QRD_Scuba_Headset_cal.acdb \
+    vendor/oppo/soda/proprietary/vendor/etc/acdbdata/QRD/bengal-scubaqrd-snd-card/QRD_Scuba_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/bengal-scubaqrd-snd-card/QRD_Scuba_Speaker_cal.acdb \
     vendor/oppo/soda/proprietary/vendor/etc/acdbdata/QRD/bengal-scubaqrd-snd-card/QRD_Scuba_workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/bengal-scubaqrd-snd-card/QRD_Scuba_workspaceFile.qwsp \
     vendor/oppo/soda/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb \
     vendor/oppo/soda/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd \
@@ -1032,6 +1064,7 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/soda/proprietary/vendor/lib/libwfduibcsrc_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfduibcsrc_proprietary.so \
     vendor/oppo/soda/proprietary/vendor/lib/libwfduibcsrcinterface_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfduibcsrcinterface_proprietary.so \
     vendor/oppo/soda/proprietary/vendor/lib/libwfdutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdutils_proprietary.so \
+    vendor/oppo/soda/proprietary/vendor/lib/oplus_btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib/oplus_btaudio_offload_if.so \
     vendor/oppo/soda/proprietary/vendor/lib/rfsa/adsp/libadsp_jpege_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libadsp_jpege_skel.so \
     vendor/oppo/soda/proprietary/vendor/lib/rfsa/adsp/libapps_mem_heap.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libapps_mem_heap.so \
     vendor/oppo/soda/proprietary/vendor/lib/rfsa/adsp/libbitml_nsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libbitml_nsp_skel.so \
@@ -1413,6 +1446,7 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/soda/proprietary/vendor/lib64/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvhidl.so \
     vendor/oppo/soda/proprietary/vendor/lib64/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxml.so \
     vendor/oppo/soda/proprietary/vendor/lib64/libxtadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxtadapter.so \
+    vendor/oppo/soda/proprietary/vendor/lib64/oplus_btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib64/oplus_btaudio_offload_if.so \
     vendor/oppo/soda/proprietary/vendor/lib64/qcrild_librilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qcrild_librilutils.so \
     vendor/oppo/soda/proprietary/vendor/lib64/qtibus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtibus.so \
     vendor/oppo/soda/proprietary/vendor/lib64/qtimutex.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtimutex.so \
